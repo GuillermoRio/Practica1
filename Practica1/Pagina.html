@@ -1,0 +1,118 @@
+<html>
+<head>
+
+    <title>Portafolio de Guillermo Riofrío</title>
+    <style>
+        .contenedorConTablas {
+            display: flex;
+            justify-content: center;
+
+            gap: 20px;
+        }
+        th,td {
+            padding: 10px;
+            text-align: center; 
+            vertical-align: middle;
+        }
+        .espacio {
+            height: 30px;
+        }
+        .contactos {
+            width: 20px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .contenedorSinTablas {
+            position: absolute;
+            left:  450px;
+            right: 450px;
+        }
+        .fecha {
+            font-size: 12px;
+            padding-left: 950px;
+        }
+        .trabajos{
+            font-size: 20px;
+            font-style: italic;
+        }
+        h2,h3,h4{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedorConTablas">
+        <table>
+            <th><h1>GUILLERMO RIOFRIO ALVAREZ</h1></th>
+            <tr>
+                <td style="font-size: large;text-align: left;">
+                    Estudiante de la universidad Antonio Nebrija.<br>Guadalajara, España.<br>
+                    <a href="mailto:griofrioa@alumnos.nebrija.es?subject=Comunicado">
+                        <img class="contactos" src="Correo.png">
+                    </a>
+                    <a margin: 5px; href="https://github.com/GuillermoRio/">
+                        <img class="contactos" src="Github.png">
+                    </a>
+                    <a margin: 5px; href="https://www.linkedin.com/in/guillermo-riofr%C3%ADo-alvarez-735b13223/">
+                        <img class="contactos" src="Linkedin.png">
+                    </a>
+                </td>
+
+            </tr>  
+            <br><br><br>
+            <tr class="espacio"></tr><!--DEJAR ESPACIO-->
+           
+        </table>
+        <table>
+            <td><img src="Foto1.png" width="100px" height="120px"></td>
+        </table>
+        
+    </div>
+    <div class="contenedorSinTablas">
+        <h2>Sobre mí</h2>
+        <texto> 
+            Soy un Ingeniero Informático, apasionado por el desarrollo de software y la tecnología.
+            Me interesa la programación, la inteligencia artificial y la resolución de problemas a través del código.
+            Estoy en constante aprendizaje y explorando diferentes áreas de la informática para desarrollar mis habilidades
+            y prepararme para futuros retos en el mundo profesional.
+        </texto>
+        <h3>Experiencia Laboral</h3>
+        <texto>
+            <titulo class="trabajos">Desarrollador Web Junior - WebSolutions<br></titulo>
+            Gestión de BBDD SQL para optimización de rendimiento.<br>
+        </texto>
+        <texto>
+            <titulo class="trabajos"><br>Desarrollador Backend - CodeTech<br></titulo>
+            Gestión y mantenimiento de APIs REST utilizando Node.js y Express.<br>
+        </texto>
+        <texto>
+            <titulo class="trabajos"><br>Ingeniero del software - InnovateX<br></titulo>
+            Desarrollo de aplicaciones escalables con python y Django.<br>
+        </texto>
+        
+        <h4>Educación</h4>
+        <button onclick="Mostrar()" id="btn">Mostrar más</button>
+        <p id="información">Universidad Antonio de Nebrija.<br>Ingeniería informática.</p>
+        
+    </div>
+    <div class="Fecha" style="padding-top: 210px;"> (2020 - 2021)</div>
+    <div class="Fecha" style="padding-top: 40px;"> (2021 - 2023)</div>
+    <div class="Fecha" style="padding-top: 40px;"> (Actualidad)</div>
+
+
+    <script>
+        function Mostrar() {
+        var info = document.getElementById("información");
+        var boton = document.getElementById("btn");
+
+        if (info.style.display === "none") {
+            info.style.display = "block";   
+            boton.textContent = "Mostrar menos"; 
+        } else {
+            info.style.display = "none";
+            boton.textContent = "Mostrar más";
+        }
+    }
+    </script>
+</body>
+</html>
